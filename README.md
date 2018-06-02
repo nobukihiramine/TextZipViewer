@@ -2,7 +2,7 @@
 Zipファイル内のファイルパスのリストとファイル内容を読み込む方法のサンプル実装
 
 ## Screenshots : スクリーンショット
-<img src="images/Screenshot_01.png" width="256" alt="Screenshot"/> <img src="images/Screenshot_02.png" width="256" alt="Screenshot"/> <img src="images/Screenshot_03.png" width="256" alt="Screenshot"/>
+<img src="_images/Screenshot_01.png" width="256" alt="Screenshot"/> <img src="_images/Screenshot_02.png" width="256" alt="Screenshot"/> <img src="_images/Screenshot_03.png" width="256" alt="Screenshot"/>
 
 ## Requirements : 必要条件、依存関係
 - Android Studio 3.1.2
