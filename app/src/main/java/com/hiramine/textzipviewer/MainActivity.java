@@ -42,14 +42,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 		setContentView( R.layout.activity_main );
 
 		// アダプタの設定
-		m_listView = (ListView)findViewById( R.id.listView );
+		m_listView = findViewById( R.id.listView );
 		List<String> listPath     = new ArrayList<>();
 		ArrayAdapter<String>  arrayAdapter = new ArrayAdapter<>( this, android.R.layout.simple_list_item_1, listPath );
 		m_listView.setAdapter( arrayAdapter );
 		m_listView.setOnItemClickListener( this );
 
 		// テキストビュー
-		m_textView = (TextView)findViewById( R.id.textView );
+		m_textView = findViewById( R.id.textView );
 	}
 
 	// 初回表示時、および、ポーズからの復帰時

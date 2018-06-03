@@ -22,7 +22,7 @@ public class ZipFileLoader
 			return null;
 		}
 
-		List<NameAndContent> listNameAndContent = new ArrayList<NameAndContent>();
+		List<NameAndContent> listNameAndContent = new ArrayList<>();
 
 		try
 		{
@@ -68,7 +68,7 @@ public class ZipFileLoader
 		}
 		catch( Exception e )
 		{
-			Log.e( "TextFileLoader", "load : " + e );
+			Log.e( "ZipFileLoader", "load : " + e );
 			return null;
 		}
 
