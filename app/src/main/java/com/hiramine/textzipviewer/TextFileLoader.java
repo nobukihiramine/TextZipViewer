@@ -23,8 +23,8 @@ public class TextFileLoader
 			boolean        bResult;
 
 			// ファーストパース（行数カウント）
-			bufferedReader = new BufferedReader( new FileReader( strPath ) );    // ファイルを開く
 			int[] aiCountLine = new int[]{ 0 };
+			bufferedReader = new BufferedReader( new FileReader( strPath ) );    // ファイルを開く
 			bResult = parse_first( bufferedReader, aiCountLine );
 			bufferedReader.close();    // ファイルを閉じる
 			if( !bResult )
@@ -33,8 +33,8 @@ public class TextFileLoader
 			}
 
 			// セカンドパース（内容読み込み）
-			bufferedReader = new BufferedReader( new FileReader( strPath ) );    // ファイルを開く
 			String[] astrContent = new String[]{ "" };
+			bufferedReader = new BufferedReader( new FileReader( strPath ) );    // ファイルを開く
 			bResult = parse_second( bufferedReader, astrContent );
 			bufferedReader.close();    // ファイルを閉じる
 			if( !bResult )

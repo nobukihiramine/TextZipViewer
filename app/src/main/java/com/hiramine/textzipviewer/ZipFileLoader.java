@@ -43,18 +43,19 @@ public class ZipFileLoader
 				boolean        bResult;
 
 				// ファーストパース（行数カウント）
-				bufferedReader = new BufferedReader( new InputStreamReader( zipFile.getInputStream( zipEntry), "UTF-8" ) );
 				int[] aiCountLine = new int[]{ 0 };
+				bufferedReader = new BufferedReader( new InputStreamReader( zipFile.getInputStream( zipEntry), "UTF-8" ) );
 				bResult = TextFileLoader.parse_first( bufferedReader, aiCountLine );
 				if( !bResult )
 				{
 					continue;
 				}
 
+
 				// セカンドパース（内容読み込み）
+				String[] astrContent = new String[]{ "" };
 				ZipEntry zipEntry2 = zipFile.getEntry( strEntryPath );
 				bufferedReader = new BufferedReader( new InputStreamReader( zipFile.getInputStream( zipEntry2 ), "UTF-8" ) );
-				String[] astrContent = new String[]{ "" };
 				bResult = TextFileLoader.parse_second( bufferedReader, astrContent );
 				if( !bResult )
 				{
